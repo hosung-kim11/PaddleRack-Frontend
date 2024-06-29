@@ -57,7 +57,7 @@ function AdminDashboard() {
             <thead>
               <tr>
                 <th className="position-label">Location Name</th>
-                <th className="initial-label">Go to Location</th>
+                <th className="initial-label">Manage Location</th>
                 <th className="initial-label">Delete Location</th>
               </tr>
             </thead>
@@ -68,9 +68,7 @@ function AdminDashboard() {
                   <td className="table-cell">
                     <Link to={`/user/admin/${location._id}`}>
                       <button className="admin-button-class">
-                        <span className="admin-button">
-                          Go to {location.name}
-                        </span>
+                        <span className="admin-button">Go!</span>
                       </button>
                     </Link>
                   </td>
