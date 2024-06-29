@@ -14,9 +14,7 @@ import AdminDashboard from "./components/pages/AdminDashboard";
 import AdminLocation from "./components/pages/AdminLocation";
 import YouCantBeHere from "./components/pages/YouCantBeHere.jsx";
 
-// need a way to make this a proxy
-axios.defaults.baseURL = "http://localhost:8080";
-
+axios.defaults.baseURL = process.env.REACT_APP_API_KEY;
 function App() {
   return (
     <>

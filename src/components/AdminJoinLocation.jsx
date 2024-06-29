@@ -10,7 +10,7 @@ function AdminJoinLocation({ userId, locationId, fetchCourtsAndQueue }) {
   };
 
   // WebSocket setup for real-time updates
-  const socket = io("http://localhost:8080", {
+  const socket = io(process.env.REACT_APP_API_KEY, {
     transports: ["websocket"],
     autoConnect: false,
   });

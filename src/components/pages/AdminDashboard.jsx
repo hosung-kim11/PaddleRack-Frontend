@@ -27,7 +27,7 @@ function AdminDashboard() {
       },
     };
     try {
-      const response = await axios.get("api/user/dashboard", config);
+      const response = await axios.get("/api/user/dashboard", config);
       setLocations(response.data);
     } catch (error) {
       console.error("Error fetching locations", error);
@@ -41,7 +41,7 @@ function AdminDashboard() {
       },
     };
     try {
-      await axios.delete(`api/user/delete/${locationId}`, config);
+      await axios.delete(`/api/user/delete/${locationId}`, config);
       setLocations(locations.filter((location) => location._id !== locationId));
     } catch (error) {
       console.error("Error deleting location", error);
