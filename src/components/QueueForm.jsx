@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../App.css";
 import "./styles/QueueForm.css";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -25,7 +24,7 @@ function QueueForm(user) {
 
   return (
     <>
-      <div className="container">
+      <div className="container-queue-form">
         <h1 className="create-court-title">Join Queue</h1>
         <form className="create-court-form">
           <label className="create-court-label">
