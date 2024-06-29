@@ -1,0 +1,107 @@
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  gap: 20px;
+  width: 80%;
+}
+
+.support-text {
+  font-size: 1.5rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.description-text {
+  font-size: 1rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hero-main-text {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.create-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.btn-primary {
+  box-shadow: 0px 0px 42.5px 0px rgba(0, 0, 0, 0.5);
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  display: flex;
+  width: 18.25rem;
+  height: 3.125rem;
+  padding: 0.875rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.btn-primary:hover {
+  letter-spacing: 3px;
+  background-color: hsl(206, 81%, 47%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: hsl(206, 81%, 47%) 0px 7px 29px 0px;
+}
+
+.btn-primary:active {
+  letter-spacing: 3px;
+  background-color: hsl(206, 81%, 47%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: hsl(206, 81%, 47%) 0px 0px 0px 0px;
+  transform: translateY(2px);
+  transition: 50ms;
+}
+
+/* mobile device is stacked */
+@media (max-width: 960px) {
+  .features-container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+/* desktop is row */
+@media (min-width: 961px) {
+  .features-container {
+    flex-direction: row;
+    width: 85%;
+  }
+  .hero-main-text {
+    font-size: 3rem;
+  }
+}

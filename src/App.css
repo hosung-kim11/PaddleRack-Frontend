@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.title-court-name {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Akrash;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+.fullscreen-background {
+  background: linear-gradient(180deg, #2f9cd9 25.25%, #39bc95 94.87%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow-y: scroll;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Adjust the color and transparency as needed */
+  border-radius: 6px; /* Round the edges of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4); /* Change on hover */
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+body:hover {
+  scrollbar-color: rgba(0, 0, 0, 0.4) transparent; /* Change on hover */
+}

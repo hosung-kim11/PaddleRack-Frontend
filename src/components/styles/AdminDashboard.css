@@ -1,0 +1,52 @@
+.admin-container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-dashboard-title {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0px;
+  font-family: Akrash;
+  font-weight: bold;
+}
+
+.admin-button-class {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  margin: 10px;
+}
+
+.admin-button {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  max-height: 40px;
+}
+
+button:hover .admin-button {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .admin-button {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}

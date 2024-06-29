@@ -1,2 +1,1 @@
-# PaddleRack-Frontend
-React frontend for PaddleRack
+Welcome to PaddleRack
