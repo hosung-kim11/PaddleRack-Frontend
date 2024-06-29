@@ -1,4 +1,4 @@
-.container {
+.container-create-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +15,7 @@
   font-style: normal;
   font-weight: 400;
   padding-left: 10px;
+  margin-bottom: 15px;
 }
 
 .create-court-title {
@@ -62,22 +63,7 @@ input {
   color: #ffffff;
 }
 
-.primary-btn {
-  background-color: #000;
-  color: #fff;
-  font-family: Akshar;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  margin-top: 0px;
-}
-
-button {
+.create-form-button {
   /* Variables */
   --button_radius: 0.75em;
   --button_color: #e8e8e8;
@@ -89,7 +75,7 @@ button {
   background: var(--button_outline_color);
 }
 
-.button_top {
+.button-create-form {
   display: block;
   box-sizing: border-box;
   border: 2px solid var(--button_outline_color);
@@ -101,12 +87,12 @@ button {
   transition: transform 0.1s ease;
 }
 
-button:hover .button_top {
+.create-form-button:hover .button-create-form {
   /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
 }
 
-button:active .button_top {
+.create-form-button:active .button-create-form {
   /* Push the button downwards when pressed */
   transform: translateY(0);
 }

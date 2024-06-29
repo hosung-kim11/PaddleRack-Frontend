@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../App.css";
 import "./styles/CreateForm.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -32,7 +31,7 @@ function CreateForm() {
 
   return (
     <>
-      <div className="container">
+      <div className="container-create-form">
         <h1 className="create-court-title">New PaddleRack</h1>
         <form onSubmit={handleSubmit} className="create-court-form">
           <label className="create-court-label">
@@ -59,9 +58,8 @@ function CreateForm() {
               onChange={(e) => setNum(e.target.value)}
             />
           </label>
-          {/* <button className="primary-btn">Create Court!</button> */}
-          <button>
-            <span className="button_top"> Create Now!</span>
+          <button className="create-form-button">
+            <span className="button-create-form"> Create Now!</span>
           </button>
         </form>
       </div>
