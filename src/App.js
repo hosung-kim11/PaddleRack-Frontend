@@ -13,6 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 import AdminDashboard from "./components/pages/AdminDashboard";
 import AdminLocation from "./components/pages/AdminLocation";
 import YouCantBeHere from "./components/pages/YouCantBeHere.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 axios.defaults.baseURL = process.env.REACT_APP_API_KEY;
 function App() {
