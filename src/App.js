@@ -35,6 +35,8 @@ function App() {
           <Route path="/YouCantBeHere" element={<YouCantBeHere />} />
         </Routes>
       </Router>
+      <Analytics />
+      <SpeedInsights />
       <ToastContainer />
     </>
   );
