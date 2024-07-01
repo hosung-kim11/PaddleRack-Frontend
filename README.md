@@ -1,5 +1,5 @@
 
-# PaddleRack
+# PaddleRack - Backend
 
 PaddleRack is a virtual Paddle Rack for Pickle Ball court rotations.
 <be></br>Link to [Backend](https://github.com/hosung-kim11/PaddleRack-Backend)
